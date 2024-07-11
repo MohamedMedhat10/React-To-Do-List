@@ -1,0 +1,161 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-image: url("Images/SvWWN.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Josefin Sans", sans-serif, "Courier New", Courier, monospace;
+
+}
+input:user-invalid
+{
+  border-color: red !important
+}
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+}
+.App
+{
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  height: 88vh;
+
+}
+header{
+  font-weight: bold;
+  color: aqua;
+  font-size: 40px;
+  text-shadow:
+      0 0 0px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 141px #0fa;
+}
+.TaskContainer{
+  /* position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%,-50%); */
+  width: 100%;
+/* display: flex;
+flex-direction: column;
+justify-items: center;
+align-items: center; */
+}
+
+.AddTask , .Tasks
+{
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+.AddTask{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 150px;
+  flex-wrap: wrap;
+}
+.addTaskBtn{
+  margin-top: 20px !important;
+}
+
+ul{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+flex-wrap: wrap;
+}
+li span{
+  
+  font-weight: bold;
+  text-decoration: underline;
+}
+.details
+{
+  /*margin-left: 40%;*/
+  font-size: larger;
+  font-family: cursive;
+}
+.detailsCompleted
+{
+  /*margin-left: 40%;*/
+  text-decoration: line-through;
+  font-size: larger;
+  font-family: cursive;
+}
+hr
+{
+  border: 0;
+    clear: both;
+    display: block;
+    width: 96%;
+    background-color: black;
+    height: 1px;
+}
+
+.Tasks{
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 44vh;
+
+}
+
+.status
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  font-family: cursive;
+  flex-wrap: wrap;
+}
+
+.status2
+{
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.status2 div{
+  position: relative;
+}
+
+.activeStatus
+{
+  color: cornflowerblue;
+  transition: all .5s;
+}
+.activeStatus::after
+{
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  border: 1px solid cornflowerblue;
+  transition: all .5s;
+}
+
+.detailsContainer{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detailsContainer div{
+  flex: 2;
+}
